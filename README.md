@@ -5,6 +5,7 @@
 Doc, install and writing code
 -----------------------------
 - Create a new github repository, check all marks ! gitignore, license and readme. 
+- Clone the repository on your computer
 - Write a doc for the function
 - Organize code as a package : folder/code/functions.py, and add an `__init__.py` file, in which only the version is present.
 - At the root, write a setup.py function that will allow to install the package, and then do `pip install -e.`. This should not return any error.
