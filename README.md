@@ -1,10 +1,10 @@
 # test_package
 
 
-To do
------
 
-## Doc, install and writing code
+Doc, install and writing code
+-----------------------------
+- Create a new github repository, check all marks ! gitignore, license and readme. 
 - Write a doc for the function
 - Organize code as a package : folder/code/functions.py, and add an `__init__.py` file, in which only the version is present.
 - At the root, write a setup.py function that will allow to install the package, and then do `pip install -e.`. This should not return any error.
@@ -12,7 +12,8 @@ To do
 - Check that the code is compatible with pep 8 using the command `flake8`
 - Upload everything on github by first adding all new files using `git add ...`, then commiting by using `git commit -am ` (write a message here) and then `git push`. Check on github that the new code is here.
 
-## Documentation 
+Documentation 
+-------------
 - At the root, create a `doc` folder, and in it write an `examples` folder. In this folder, create a function `plot_simple_example` in which you write a small example of what the linear regression code can do.
 - Add some plots using matplotlib. 
 
