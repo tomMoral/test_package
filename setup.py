@@ -1,5 +1,5 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(name="linear_regression",
-      packages=find_packages(),
+      packages=['linear_regression'],
       install_requires=['numpy'])
