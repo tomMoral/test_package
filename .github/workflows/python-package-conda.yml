@@ -11,10 +11,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
-      uses: conda-incubator/setup-miniconda@v2
+      uses: actions/setup-python@v2
       with:
-        python-version: 3.8
-        channels: conda-forge
+        python-version: 3.7
     - name: Add conda to system path
       run: |
         # $CONDA is an environment variable pointing to the root of the miniconda directory
@@ -22,7 +21,7 @@ jobs:
     - name: Install package
       run: |
         sudo apt-get update
-        pip install -e .
+        pip install -e.
         python -c "import linear_regression"
     - name: Lint with flake8
       run: |
