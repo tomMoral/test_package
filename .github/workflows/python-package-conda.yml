@@ -22,7 +22,6 @@ jobs:
       run: |
         sudo apt-get update
         python setup.py install
-        python -c "import linear_regression"
     - name: Lint with flake8
       run: |
         pip install flake8
