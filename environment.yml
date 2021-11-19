@@ -1,1 +1,3 @@
-numpy
+name: base
+dependencies:
+  - numpy>=1.18.5
