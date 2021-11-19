@@ -20,7 +20,8 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install package
       run: |
-        pip install -e .
+        sudo apt-get update
+        python setup.py install
         python -c "import linear_regression"
     - name: Lint with flake8
       run: |
