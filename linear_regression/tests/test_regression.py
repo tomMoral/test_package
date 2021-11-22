@@ -11,6 +11,7 @@ def test_dimensions(n):
     coefs = least_squares(X, y)
     assert len(coefs) == 3
 
+
 def test_minimum():
     X = np.random.randn(3, 2)
     y = np.random.randn(3)
