@@ -24,8 +24,8 @@ jobs:
           which python
           python setup.py install
           pip install flake8 check-manifest
-          pip install pytest
+          pip install pytest coverage pytest-sugar
       - name: Run Python unit tests
         run: |
           pytest linear_regression
-          flake8 momentumnet
+          flake8 linear_regression
