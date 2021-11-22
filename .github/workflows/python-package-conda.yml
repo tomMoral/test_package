@@ -24,6 +24,7 @@ jobs:
           which python
           python setup.py install
           pip install flake8 check-manifest
+          pip install pytest
       - name: Run Python unit tests
         run: |
           pytest linear_regression
