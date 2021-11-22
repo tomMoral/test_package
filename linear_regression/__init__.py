@@ -1,3 +1,3 @@
-__version__ = '0.0'
+__version__ = '0.1'
 
 from .regression import least_squares  # noqa
