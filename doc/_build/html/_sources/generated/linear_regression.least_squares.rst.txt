@@ -1,0 +1,6 @@
+linear\_regression.least\_squares
+=================================
+
+.. currentmodule:: linear_regression
+
+.. autofunction:: least_squares
