@@ -15,7 +15,7 @@ Doc, install and writing code
 
 Documentation 
 -------------
-- At the root, create a `doc` folder, and in it write an `examples` folder. In this folder, create a function `plot_simple_example` in which you write a small example of what the linear regression code can do.
+- At the root, create an `examples` folder. In this folder, create a function `plot_simple_example` in which you write a small example of what the linear regression code can do.
 - Add some plots using matplotlib. 
 
 ## Continuous integration
