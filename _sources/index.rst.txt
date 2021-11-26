@@ -1,6 +1,8 @@
 Dummy package
 =============
 
+Cofund seminar is the best !!
+
 API
 ---
 
