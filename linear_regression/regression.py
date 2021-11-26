@@ -20,7 +20,6 @@ def least_squares(X, y):
     """
     n, p = X.shape
     response = np.dot(X.T, y)  # Build response
-    response += 1.
     return np.linalg.solve(np.dot(X.T, X), response)
 
 
