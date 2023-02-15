@@ -1,4 +1,4 @@
-linear\_regression.least\_squares
+﻿linear\_regression.least\_squares
 =================================
 
 .. currentmodule:: linear_regression

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
     <title>linear_regression.least_squares &#8212; linear_regression 0.1 documentation</title>
-    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/bootstrap-sphinx.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-binder.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-dataframe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sg_gallery-rendered-html.css" />
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="API Documentation" href="../api.html" />
@@ -22,10 +22,10 @@
 <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
 <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 <meta name="apple-mobile-web-app-capable" content="yes">
-<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js "></script>
-<script type="text/javascript" src="../_static/js/jquery-fix.js "></script>
-<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js "></script>
-<script type="text/javascript" src="../_static/bootstrap-sphinx.js "></script>
+<script type="text/javascript" src="../_static/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+<script type="text/javascript" src="../_static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
 
   </head><body>
 
@@ -75,7 +75,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">linear_regression.least_squares</a></li>
+<li><a class="reference internal" href="#">linear_regression.least_squares</a><ul>
+<li><a class="reference internal" href="#linear_regression.least_squares"><code class="docutils literal notranslate"><span class="pre">least_squares()</span></code></a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -107,15 +110,15 @@
   <div class="row">
     <div class="body col-md-12 content" role="main">
       
-  <div class="section" id="linear-regression-least-squares">
-<h1>linear_regression.least_squares<a class="headerlink" href="#linear-regression-least-squares" title="Permalink to this headline">¶</a></h1>
-<dl class="function">
-<dt id="linear_regression.least_squares">
-<code class="sig-prename descclassname">linear_regression.</code><code class="sig-name descname">least_squares</code><span class="sig-paren">(</span><em class="sig-param">X</em>, <em class="sig-param">y</em><span class="sig-paren">)</span><a class="headerlink" href="#linear_regression.least_squares" title="Permalink to this definition">¶</a></dt>
+  <section id="linear-regression-least-squares">
+<h1>linear_regression.least_squares<a class="headerlink" href="#linear-regression-least-squares" title="Permalink to this heading">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="linear_regression.least_squares">
+<span class="sig-prename descclassname"><span class="pre">linear_regression.</span></span><span class="sig-name descname"><span class="pre">least_squares</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#linear_regression.least_squares" title="Permalink to this definition">¶</a></dt>
 <dd><p>Perform least squares regression.
 Finds coefficients w such that Xw ~= y</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>X</strong><span class="classifier">np.array, shape (n_samples, n_features)</span></dt><dd><p>The input data</p>
 </dd>
@@ -123,7 +126,7 @@ Finds coefficients w such that Xw ~= y</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>w</strong><span class="classifier">np.array, shape (n_features)</span></dt><dd><p>The predicted regression coefficients</p>
 </dd>
@@ -132,7 +135,7 @@ Finds coefficients w such that Xw ~= y</p>
 </dl>
 </dd></dl>
 
-</div>
+</section>
 
 
     </div>
@@ -147,7 +150,7 @@ Finds coefficients w such that Xw ~= y</p>
     </p>
     <p>
         &copy; Copyright 2020-2021, Pierre Ablin.<br/>
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 6.1.3.<br/>
     </p>
   </div>
 </footer>
