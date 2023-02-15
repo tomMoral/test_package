@@ -2,20 +2,22 @@ import numpy as np
 
 
 def least_squares(X, y):
-    '''Perform least squares regression
+    """
+    Perform least squares regression.
     Finds coefficients w such that Xw ~= y
 
-    Input
-    -----
+    Parameters
+    ----------
     X : np.array, shape (n_samples, n_features)
         The input data
     y : np.array, shape (n_samples)
         The input targets
+
     Returns
     -------
     w : np.array, shape (n_features)
         The predicted regression coefficients
-    '''
+    """
     n, p = X.shape
     response = np.dot(X.T, y)  # Build response
     return np.linalg.solve(np.dot(X.T, X), response)
