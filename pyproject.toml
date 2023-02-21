@@ -37,6 +37,14 @@ tests = [
     "pytest>=7.2",
 ]
 
+doc = [
+    "furo",
+    "matplotlib",
+    "numpydoc",
+    "sphinx",
+    "sphinx-gallery",
+]
+
 [project.urls]
 homepage = "https://github.com/tomMoral/test_package"
 repository = "https://github.com/tomMoral/test_package.git"
