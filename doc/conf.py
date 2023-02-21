@@ -1,8 +1,6 @@
+import datetime
 import sys
-# import os
-import sphinx_gallery  # noqa
-import sphinx_bootstrap_theme
-from numpydoc import numpydoc, docscrape  # noqa
+
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -45,8 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'linear_regression'
-copyright = u'2020-2021, Pierre Ablin'
+project = u'test_package'
+copyright = f'2020-{datetime.datetime.now().year}, Pierre Ablin'
 author = u'Pierre Ablin'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -66,7 +64,7 @@ release = version
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = "en"
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
@@ -94,7 +92,8 @@ exclude_patterns = ['_build']
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'sas'
+pygments_dark_style = 'stata-dark'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -110,24 +109,12 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'bootstrap'
+html_theme = 'furo'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme_options = {
-    'navbar_sidebarrel': False,
-    'navbar_links': [
-        ("Examples", "auto_examples/index"),
-        ("API", "api"),
-        ("What's new", "whats_new"),
-        ("GitHub", "https://github.com/pierreablin/linear_regression", True)
-    ],
-    'bootswatch_theme': "united"
-}
-
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
+html_theme_options = {}
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
