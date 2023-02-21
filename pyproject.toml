@@ -1,6 +1,45 @@
 [build-system]
-requires = [
-  "setuptools>=45",
-  "wheel",
-]
+requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "linear_regression"
+authors = [
+  {name = "Pierre Ablain"},
+  {name = "Thomas Moreau"},
+  {name = "Alexis Thual"},
+]
+description = "Illustration of python packaging"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["python", "packaging", "boilerplate", "documentation", "tests", "CI"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries",
+]
+dynamic = ["version"]
+requires-python = ">=3.7"
+dependencies = [
+    "numpy>=1.20",
+]
+
+[project.optional-dependencies]
+tests = [
+    "flake8",
+    "pytest>=7.2",
+]
+
+[project.urls]
+homepage = "https://github.com/tomMoral/test_package"
+repository = "https://github.com/tomMoral/test_package.git"
+
+[tool.setuptools.dynamic]
+version = {attr = "linear_regression.__version__"}
