@@ -3,7 +3,6 @@ import pytest
 from numpy.testing import assert_almost_equal
 from linear_regression import least_squares
 
-np.random.seed(0)
 
 @pytest.mark.parametrize("n", [2, 10, 20])
 def test_dimensions(n):
