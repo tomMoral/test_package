@@ -38,7 +38,7 @@ tests = [
 ]
 
 [project.urls]
-homepage = "https://github.com/tomMoral/test_package"
+homepage = "https://tommoral.github.com/test_package"
 repository = "https://github.com/tomMoral/test_package.git"
 
 [tool.setuptools.dynamic]
