@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "linear_regression"
 authors = [
-  {name = "Pierre Ablain"},
+  {name = "Pierre Ablin"},
   {name = "Thomas Moreau"},
   {name = "Alexis Thual"},
 ]
@@ -32,7 +32,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-tests = [
+test = [
     "flake8",
     "pytest>=7.2",
 ]
@@ -46,7 +46,7 @@ doc = [
 ]
 
 [project.urls]
-homepage = "https://github.com/tomMoral/test_package"
+homepage = "https://tommoral.github.com/test_package"
 repository = "https://github.com/tomMoral/test_package.git"
 
 [tool.setuptools.dynamic]
