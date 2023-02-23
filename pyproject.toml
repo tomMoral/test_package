@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "linear_regression"
 authors = [
-  {name = "Pierre Ablain"},
+  {name = "Pierre Ablin"},
   {name = "Thomas Moreau"},
   {name = "Alexis Thual"},
 ]
