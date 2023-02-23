@@ -10,3 +10,10 @@ API
     :maxdepth: 1
 
     api.rst
+    auto_examples/index
+
+.. toctree::
+   :hidden:
+   :caption: Development
+
+   GitHub Repository <https://github.com/tomMoral/test_package>
