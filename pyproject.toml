@@ -32,7 +32,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-tests = [
+test = [
     "flake8",
     "pytest>=7.2",
 ]
