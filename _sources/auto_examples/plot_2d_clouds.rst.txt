@@ -21,7 +21,66 @@
 Plot 2D clouds
 ==============
 
-.. GENERATED FROM PYTHON SOURCE LINES 5-25
+.. GENERATED FROM PYTHON SOURCE LINES 7-8
+
+Import packages and set random seed
+
+.. GENERATED FROM PYTHON SOURCE LINES 8-15
+
+.. code-block:: default
+
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    from linear_regression import least_squares
+
+    np.random.seed(0)
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 16-17
+
+Generate data
+
+.. GENERATED FROM PYTHON SOURCE LINES 17-25
+
+.. code-block:: default
+
+    n = 100
+    x = np.linspace(0, 1, n)
+
+    y = 2.5 * x + 0.1 * np.random.randn(n)
+    X = x[:, None]
+    predicted_coef = least_squares(X, y)
+    y_predicted = predicted_coef * x
+
+
+
+
+
+
+
+
+.. GENERATED FROM PYTHON SOURCE LINES 26-27
+
+Plot data in figure
+
+.. GENERATED FROM PYTHON SOURCE LINES 27-34
+
+.. code-block:: default
+
+    plt.figure()
+    plt.scatter(x, y, c='k', label='data')
+    plt.plot(x, y_predicted, c='r', label='prediction')
+    plt.legend()
+    plt.xlabel('x')
+    plt.ylabel('y')
+    plt.show()
 
 
 
@@ -34,33 +93,10 @@ Plot 2D clouds
 
 
 
-.. code-block:: default
-
-    import numpy as np
-    import matplotlib.pyplot as plt
-    from linear_regression import least_squares
-
-
-    # Generate data
-    n = 100
-    x = np.linspace(0, 1, n)
-
-    y = 2.5 * x + 0.1 * np.random.randn(n)
-    X = x[:, None]
-    predicted_coef = least_squares(X, y)
-    y_predicted = predicted_coef * x
-
-    plt.figure()
-    plt.scatter(x, y, c='k', label='data')
-    plt.plot(x, y_predicted, c='r', label='prediction')
-    plt.legend()
-    plt.xlabel('x')
-    plt.ylabel('y')
-    plt.show()
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** ( 0 minutes  0.100 seconds)
+   **Total running time of the script:** ( 0 minutes  0.120 seconds)
 
 
 .. _sphx_glr_download_auto_examples_plot_2d_clouds.py:
