@@ -35,7 +35,7 @@ jobs:
     - name: Test with pytest
       run: |
         pytest
-  unittest:
+  lint:
     name: Linting
     runs-on: ubuntu-latest
     steps:
